@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>vn.tinhh</groupId>
-    <artifactId>kafka-demo</artifactId>
+    <artifactId>consumer-1st-demo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>kafka-demo</name>
-    <description>kafka-demo</description>
+    <name>consumer-1st-demo</name>
+    <description>consumer-1st-demo</description>
     <url/>
     <licenses>
         <license/>
@@ -39,6 +39,24 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+        <!-- Optional: If you are using Lombok for getter/setter generation -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.24</version>
+            <scope>provided</scope>
+        </dependency>
+        <!-- Spring Web for RESTful APIs -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!-- Spring Kafka for Kafka integration -->
+        <dependency>
+            <groupId>org.springframework.kafka</groupId>
+            <artifactId>spring-kafka</artifactId>
         </dependency>
     </dependencies>
 
